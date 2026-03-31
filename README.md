@@ -34,7 +34,7 @@ It is common for classical molecular dynamics simulations to be run on millions 
 Is this practical using your code?
 Describe some optimizations or algorithmic changes that could improve your code's parallelization and performance.
 
-Note: Sometimes the results of a profiling experiment or optimization effort inspire ideas about other experiments that might be informative.  Feel free to run and include any other profiling results you find relevant.  For example, you might find it helpful to analyze the arithmetic intensity of the code.
+Note: Sometimes the results of a profiling experiment or optimization effort inspire ideas about other experiments that might be informative.  Feel free to run and include any other profiling results you find relevant.  For example, you might find it helpful to measure the arithmetic intensity of the code.
 
 ## Task 4 - Code Optimization
 
