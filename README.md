@@ -16,7 +16,7 @@ We also plot the ideal speedup vs. number of cores (this will just be a straight
 For an example, see [here](https://waterprogramming.wpcomstaging.com/2021/06/07/scaling-experiments-how-to-measure-the-performance-of-parallel-code-on-hpc-systems/).
 
 Construct a strong scaling plot of your calculation using the Perlmutter CPU nodes, collecting data for at least 1, 2, 4, 8, 16, 32, and 64 cores on a single node.
-Use a system size (number of atoms) that takes roughly 5-10 minutes to run 100 iterations in serial; you'll need to experiment a bit to find a good size.
+Use a system size (number of atoms) that takes roughly 5-10 minutes to run 100 iterations in serial; you'll need to experiment a bit to find a reasonable number of atoms and simulation cell length.
 *In addition to plotting the strong scaling of the entire calculation, also plot the strong scaling of relevant components of the calculation, including force evaluation, velocities update, and anything else that appears particularly relevant.*
 
 Add to this `README.md` file your raw data (timings vs. number of cores) and your plots.
