@@ -60,7 +60,7 @@ Based on your profiling results, describe and implement an optimization that is 
 Repeat the strong scaling experiment from earlier and include your data and plots in this repository.
 Compare your previous results with your new results.
 
-Note: For credit, it isn't necessary to demonstrate a massive performance improvement here - just offer a clear and well-reasoned enhancement.
+Note: For credit, it isn't necessary to demonstrate a massive performance improvement here - just offer a clear and well-reasoned enhancement that addresses the primary parallelization/optimization shortcomings of your code.
 
 
 
