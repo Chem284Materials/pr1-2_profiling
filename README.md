@@ -7,7 +7,7 @@ In the second part of this project, you will profile your code from Part 1 and u
 If a code exhibits ideal parallelism, it should complete twice as fast when running on two cores vs. running on one core - a speedup of 2.
 Likewise, if run on 4 cores, it should run 4 times faster than on a single core - a speedup of 4.
 Of course, in reality we never acheive these ideal speedups; our actual speedups will always be smaller than the ideal values.
-Comparing our real-world speedups vs ideal is a very good way to determine the efficiency of our parallelization scheme.
+Comparing our real-world speedups vs. ideal is a very good way to determine the efficiency of our parallelization scheme.
 
 One of the most common ways to do this is to construct a plot of the **strong scaling** of our code.
 For a problem of **fixed size** (e.g., number of atoms, size of matrices, etc.) we run calculations with various numbers of cores.
