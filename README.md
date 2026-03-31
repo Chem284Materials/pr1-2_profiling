@@ -15,9 +15,9 @@ We then plot our observed speedups vs. number of cores.
 We also plot the ideal speedup vs. number of cores (this will just be a straight line).
 For an example, see [here](https://waterprogramming.wpcomstaging.com/2021/06/07/scaling-experiments-how-to-measure-the-performance-of-parallel-code-on-hpc-systems/).
 
-Construct a strong scaling plot of your calculation, from 1 to at least 64 cores on the Perlmutter CPU nodes.
+Construct a strong scaling plot of your calculation using the Perlmutter CPU nodes, collecting data for at least 1, 2, 4, 8, 16, 32, and 64 cores on a single node.
 Use a system size (number of atoms) that takes roughly 5-10 minutes to run 100 iterations in serial; you'll need to experiment a bit to find a good size.
-*In addition to plotting the strong scaling of the entire calculation, also plot the strong scaling of relevant components of the calculation, including force evaluation, neighborlist evaluation, and anything else that appears particularly relevant.*
+*In addition to plotting the strong scaling of the entire calculation, also plot the strong scaling of relevant components of the calculation, including force evaluation, velocities update, and anything else that appears particularly relevant.*
 
 Add to this `README.md` file your raw data (timings vs. number of cores) and your plots.
 
@@ -25,6 +25,25 @@ Add to this `README.md` file your raw data (timings vs. number of cores) and you
 
 One of the primary challenges in distributed-memory parallelization is ensuring that communication is handled efficiently.
 For the same system size that you used in Task 1, measure and plot the walltime associated with inter-process communication vs. number of cores.
-Include the raw data and plot in this README.md
+Include the raw data and the plot in this `README.md`.
+
+## Task 3 - Analysis
+
+Discuss the efficiency of the code's parallelization.
+It is common for classical molecular dynamics simulations to be run on millions or billions of atoms for millions of timesteps.
+Is this practical using your code?
+Describe some optimizations or algorithmic changes that could improve your code's parallelization and performance.
+
+Note: Sometimes the results of a profiling experiment or optimization effort inspire ideas about other experiments that might be informative.  Feel free to run and include any other profiling results you find relevant.
+
+## Task 4 - Code Optimization
+
+Based on your profiling results, describe and implement an optimization that is likely to improve the code's parallelization efficiency.
+Repeat the strong scaling experiment from earlier and include your data and plots in this repository.
+Compare your previous results with your new results.
+
+Note: For credit, it isn't necessary to demonstrate a massive performance improvement here - just offer a clear and well-reasoned enhancement.
+
+
 
 ## Answers
