@@ -36,7 +36,7 @@ $\beta = T_{avg} / T_{max}$
 
 The closer $\beta$ is to 1, the better load balanced the calculation.
 
-Note that "time spent doing computation" usually doesn't include communication time or synchronization time.
+Note that the measurement of "time spent doing computation" shouldn't include communication time or synchronization time.
 Depending on how you have parallelized the calculation, it might not be straightforward to get this time for each rank.
 If necessary, instead of measuring the time spent in computation, you can simply measure the number `N` of Lennard-Jones interactions evaluated by each rank (i.e., the number of interactions within the short-range cutoff for each rank).
 Then your load balance metric would be:
